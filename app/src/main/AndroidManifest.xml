@@ -32,14 +32,19 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
+
+        </activity>
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".TitleActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".JoinActivity" />
-        <activity android:name=".TitleActivity"></activity>
+
+
+        <activity android:name=".ThemeActivity"></activity>
     </application>
 
 </manifest>

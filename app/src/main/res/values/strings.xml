@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">TinhMap3</string>
     <string name="title_activity_maps">Map</string>
+    <string name="green_theme">GreenTheme</string>
+    <string name="red_theme">RedTheme</string>
+    <string name="pink_theme">PinkTheme</string>
+    <string name="blue_theme">BlueTheme</string>
+
+
+
+
+
 </resources>

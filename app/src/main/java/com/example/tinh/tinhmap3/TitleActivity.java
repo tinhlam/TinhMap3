@@ -14,12 +14,19 @@ public class TitleActivity extends AppCompatActivity {
     private Button btnCreate;
     private Button btnJoin;
     private Button btnHelp;
+    private Button btnTheme;
+
+    public View view;
+    public static String colorTheme = "grey";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title);
+        view = this.getWindow().getDecorView();
+        changeTheme();
+
         btnCreate = (Button) findViewById(R.id.create_button);
         //btnCreate.setOnClickListener(this);
         btnCreate.setOnClickListener(new View.OnClickListener() {
@@ -45,9 +52,27 @@ public class TitleActivity extends AppCompatActivity {
 
             }
         });
+        btnTheme = (Button) findViewById(R.id.theme_button);
+        //btnJoin.setOnClickListener(this);
+        btnTheme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                Intent intent = new Intent(TitleActivity.this, ThemeActivity.class);
+
+                startActivity(intent);
 
 
-        Toast.makeText(this, "button set", Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+        //Toast.makeText(this, "button set", Toast.LENGTH_LONG).show();
+    }
+
+    public void changeTheme()
+    {
+        //view.setBackgroundResource(R.color.colorTheme);
     }
 
 

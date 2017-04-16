@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tinh.tinhmap3.ThemeActivity">
+
+    <RadioGroup
+        android:layout_width="310dp"
+        android:layout_height="424dp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="29dp">
+
+
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-15dp">
+
+        <RadioButton
+            android:id="@+id/red_radio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="selectTheme"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/green_radio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="selectTheme"
+            android:text="Green" />
+
+        <RadioButton
+            android:id="@+id/blue_radio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="selectTheme"
+            android:text="Blue"
+
+            />
+
+        <RadioButton
+            android:id="@+id/title_radio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="selectTheme"
+            android:text="Title" />
+
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
