@@ -33,9 +33,9 @@ public class ThemeActivity extends AppCompatActivity {
             case R.id.green_radio:
                 v.setBackgroundResource(R.color.green);
                 break;
-            case R.id.title_radio:
-                updateTheme();
-                break;
+            //case R.id.title_radio:
+               // updateTheme();
+               // break;
 
         }
 
@@ -43,7 +43,7 @@ public class ThemeActivity extends AppCompatActivity {
     }
     public void updateTheme()
     {
-        TitleActivity.colorTheme = "yellow";
+        //TitleActivity.colorTheme = "yellow";
 
     }
 }
